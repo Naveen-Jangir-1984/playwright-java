@@ -1,0 +1,23 @@
+{
+  "sit": {
+    "baseUrl": "https://www.saucedemo.com/",
+    "users": {
+      "StandardUser": {
+        "username": "standard_user",
+        "password": "secret_sauce"
+      }
+    }
+  },
+  "stg": {
+    "baseUrl": "https://www.saucedemo.com/",
+    "users": {
+      "StandardUser": {
+        "username": "standard_user",
+        "password": "secret_sauce"
+      }
+    }
+  },
+  "api": {
+    "baseUrl": "https://jsonplaceholder.typicode.com/posts/"
+  }
+}
