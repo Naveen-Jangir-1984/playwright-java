@@ -12,7 +12,7 @@ public class BaseTest {
 	@BeforeMethod
 	public void setUp() {
 		// Load test data
-		JsonDataManager.load("src/test/resources/TestData.json");
+		JsonDataManager.load("src/test/resources/Environments.json");
 
 		// Read environment dynamically (default: qa)
 		String env = System.getProperty("env", "sit");
