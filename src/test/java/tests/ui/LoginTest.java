@@ -8,12 +8,12 @@ import org.testng.annotations.Test;
 
 public class LoginTest extends BaseTest {
 
-	@Test
-	public void testLogin() {
-		String username = JsonDataManager.getUser("StandardUser", "username");
-		String password = JsonDataManager.getUser("StandardUser", "password");
+  @Test
+  public void testLogin() {
+    String username = JsonDataManager.getUser("StandardUser", "username");
+    String password = JsonDataManager.getUser("StandardUser", "password");
 
-		LoginPage loginPage = new LoginPage(page);
-		loginPage.login(username, password);
-	}
+    LoginPage loginPage = new LoginPage(page);
+    loginPage.login(username, password);
+  }
 }
