@@ -10,7 +10,7 @@ import org.testng.annotations.Test;
 public class PostsTest {
 
   @Test
-  public void testLoginApi() {
+  public void testPosts() {
     RestAssured.useRelaxedHTTPSValidation();
     String baseUrl = JsonDataManager.getBaseUrl("api");
     Response response = RestAssured

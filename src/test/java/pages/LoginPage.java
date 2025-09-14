@@ -17,5 +17,6 @@ public class LoginPage {
     page.fill(usernameInput, username);
     page.fill(passwordInput, password);
     page.click(loginButton);
+    page.waitForLoadState();
   }
 }

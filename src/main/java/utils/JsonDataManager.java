@@ -9,6 +9,8 @@ import java.io.IOException;
 public class JsonDataManager {
   private static JsonNode rootNode;
 
+  private static String environment;
+
   public static void load(String filePath) {
     ObjectMapper mapper = new ObjectMapper();
     try {
@@ -19,10 +21,11 @@ public class JsonDataManager {
   }
 
   public static String getBaseUrl(String env) {
+    environment = env;
     return rootNode.path(env).path("baseUrl").asText();
   }
 
   public static String getUser(String user, String field) {
-    return rootNode.path("users").path(user).path(field).asText();
+    return rootNode.path(environment).path("users").path(user).path(field).asText();
   }
 }
